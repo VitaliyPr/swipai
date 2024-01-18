@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+  <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Главная</title>
+
+<meta name="description" content="Описание" />
+<meta name="keywords" content="Ключевики" />
+<meta name="author" content="" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="format-detection" content="address=no" />
+
+<script>
+  const totalFontSize = function () {
+    const pageWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+    if (pageWidth > 2000) {
+      document.documentElement.style.fontSize = "14px";
+    } else if (pageWidth > 992) {
+      let value = ((pageWidth * 10) / 1440).toFixed(2);
+      document.documentElement.style.fontSize = value + "px";
+    } else {
+      document.documentElement.style.fontSize ="10px";
+    }
+  };
+
+  totalFontSize();
+
+  window.addEventListener("resize", totalFontSize);
+</script>
+
+
+<link rel="stylesheet" href="css/plugins/plugins.min.css?_v=20240118181331" />
+
+<link rel="stylesheet" href="css/style.min.css?_v=20240118181331" />
+
+
+
+</head>
+
+<body >
+
+  
+
+  <header class="header">
+  <div class="header__container">
+    <div class="header__logo logo">
+      <svg width="24" height="44" viewBox="0 0 24 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <mask id="mask0_207_451" style="mask-type: alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="44">
+          <path
+            d="M21.4488 23.5133C22.5467 23.5133 23.4367 22.6324 23.4367 21.5457C23.4367 20.459 22.5467 19.5781 21.4488 19.5781C20.3509 19.5781 19.4609 20.459 19.4609 21.5457C19.4609 22.6324 20.3509 23.5133 21.4488 23.5133Z"
+            fill="#D18787"
+          />
+          <path
+            d="M21.4488 7.60703C22.5467 7.60703 23.4367 6.72612 23.4367 5.63945C23.4367 4.55279 22.5467 3.67188 21.4488 3.67188C20.3509 3.67188 19.4609 4.55279 19.4609 5.63945C19.4609 6.72612 20.3509 7.60703 21.4488 7.60703Z"
+            fill="#D18787"
+          />
+          <path
+            d="M1.98788 35.3414C3.08575 35.3414 3.97576 34.4605 3.97576 33.3738C3.97576 32.2872 3.08575 31.4062 1.98788 31.4062C0.890003 31.4062 0 32.2872 0 33.3738C0 34.4605 0.890003 35.3414 1.98788 35.3414Z"
+            fill="#D18787"
+          />
+          <path
+            d="M0.140625 43.4972V41.4166C6.31051 41.4166 11.199 39.6445 14.6614 36.1437C20.5065 30.2453 20.3968 21.3022 20.3968 21.2153L22.4988 21.1719C22.5076 21.5715 22.6392 31.0532 16.1753 37.5901C12.3005 41.5079 6.90292 43.4972 0.140625 43.4972Z"
+            fill="#D18787"
+          />
+          <path
+            d="M2.941 24.4117C4.03888 24.4117 4.92888 23.5308 4.92888 22.4441C4.92888 21.3575 4.03888 20.4766 2.941 20.4766C1.84313 20.4766 0.953125 21.3575 0.953125 22.4441C0.953125 23.5308 1.84313 24.4117 2.941 24.4117Z"
+            fill="#D18787"
+          />
+          <path
+            d="M23.434 0.5V2.58485C17.6415 2.73253 13.0295 4.50899 9.71634 7.85779C3.8668 13.7736 3.99405 22.6819 3.99405 22.7732L1.89208 22.8166C1.88331 22.417 1.75166 12.9353 8.21555 6.39839C11.9324 2.63697 17.0491 0.656364 23.434 0.5Z"
+            fill="#D18787"
+          />
+          <path
+            d="M23.4306 9.20312V11.2923C20.8503 11.592 13.3815 13.1817 13.3815 21.5385C13.3815 27.7235 10.2 30.9724 7.52753 32.6099C4.67517 34.3603 1.84035 34.6513 1.72187 34.6644L1.51562 32.5925C1.91057 32.5534 11.2795 31.485 11.2795 21.5385C11.2795 15.297 14.8384 12.2479 17.8268 10.7841C20.0648 9.68959 22.2852 9.32474 23.4306 9.20312Z"
+            fill="#D18787"
+          />
+          <path
+            d="M19.9984 14.7793C21.3149 14.1582 22.6226 13.915 23.4344 13.8281V15.9217C21.6616 16.1562 17.7034 17.2204 17.7034 21.9981C17.7034 30.1204 13.0869 38.7942 0.132812 38.7942V36.7137C14.4824 36.7137 15.6014 25.4512 15.6014 21.9981C15.6014 17.7589 17.993 15.7349 19.9984 14.7793Z"
+            fill="#D18787"
+          />
+          <path
+            d="M0.140625 30.1019V28.0214C4.59909 28.0214 6.70106 25.8019 6.75372 21.0415C6.80638 16.394 8.60556 13.3102 8.68016 13.1799C13.1957 5.3356 22.6173 4.62762 23.0122 4.60156L23.1526 6.67773C23.0649 6.68207 14.4507 7.3553 10.4969 14.2223C10.475 14.257 8.89519 16.9977 8.85131 21.0632C8.82498 23.5172 8.27645 25.5109 7.22327 26.992C5.75759 29.0551 3.37477 30.1019 0.140625 30.1019Z"
+            fill="#D18787"
+          />
+        </mask>
+        <g mask="url(#mask0_207_451)">
+          <rect y="0.5" width="23.8453" height="43.3173" fill="url(#paint0_linear_207_451)" />
+        </g>
+        <defs>
+          <linearGradient
+            id="paint0_linear_207_451"
+            x1="23.8453"
+            y1="0.500001"
+            x2="0.0944067"
+            y2="43.869"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stop-color="#05B29E" />
+            <stop offset="1" stop-color="#716DFC" />
+          </linearGradient>
+        </defs>
+      </svg>
+      <span>swipai</span>
+    </div>
+    <div class="header__burger burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="menu" id="menu">
+  <div class="menu__wrap">
+    <nav class="menu__nav">
+      <a href="#" class="menu__link">Zeichnungen</a>
+      <a href="#" class="menu__link">Über uns</a>
+      <a href="#" class="menu__link">Richtlinien</a>
+      <a href="#" class="menu__link">Gewinner</a>
+    </nav>
+  </div>
+</div>
+
+  </div>
+</header>
+
+
+  <main>
+
+    <section class="hero">
+  <div class="hero__container">
+    <div class="hero__wrap">
+      <div class="hero__body">
+        <h1 class="hero__title">SWIPAI:</h1>
+        <h2 class="hero__subtitle">smart AI for real winners</h2>
+        <p class="hero__text">
+          Get the opportunity to win dozens of valuable<br />
+          prizes with a smart neural network!
+        </p>
+        <a href="#" class="hero__btn btn btn--gradient">GET VOUCHER</a>
+      </div>
+      <div class="hero__picture">
+        <img src="img/hero-image.svg" alt="scanner" loading="lazy" class="img-full">
+      </div>
+    </div>
+    <div class="hero__down">
+      <div class="hero__down-arrow">
+        <svg><use xlink:href="img/icons/icons.svg#arrow"></use></svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="scw">
+  <h3 class="scw__title">
+    Swipe, Check, Win!
+  </h3>
+</section>
+    <section class="section section--calcareous-sinter">
+  <div class="section__container section__container--spb">
+    <div class="section__columns">
+      <div class="section-columns__content">
+        <h3 class="section__title about-title">About SwipAi</h3>
+        <p class="section__text about-text">
+          We are an <b>innovative sweepstakes</b> service based on <b>artificial intelligence</b>. Using smart neural
+          network technologies, we offer you <b>access</b> to the <b>most promising draws</b>, personal and group
+          <b>vouchers</b>, exclusive <b>promo codes</b>, and dozens of <b>prizes of different price</b> categories.
+          <br /><br />
+          We use AI to analyze a huge amount of data from various sweepstakes and calculate the winning percentage among
+          people who have used our services.
+        </p>
+      </div>
+      <div class="section-columns__picture">
+        <img src="img/about-image.svg" alt="about" loading="lazy" class="img-full" />
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="section section--calcareous-sinter">
+  <div class="section__container section__container--spt">
+    <div class="section__columns">
+      <div class="section-columns__picture">
+        <img src="img/offer-image.svg" alt="offer" loading="lazy" class="img-full">
+      </div>
+      <div class="section-columns__content">
+        <h3 class="section__title offer-title">Exclusive offer: 3 vouchers for free</h3>
+        <ul class="section__list list offer-list">
+          <li class="list-item">
+            <div class="list-item__num">1</div>
+            <p class="list-item__text">
+              <b>Tired of paying</b> to try and lose? Instead of prizes, you only get <b>spam</b> in your mail? Yes, it <b>really sucks!</b>
+            </p>
+          </li>
+          <li class="list-item">
+            <div class="list-item__num">2</div>
+            <p class="list-item__text">
+              We offer you <b>3 free vouchers</b> to evaluate the benefits of SwipAi, <b>without subscriptions</b> or obligations. <b>No
+                spam, just prizes!</b>
+            </p>
+          </li>
+          <li class="list-item">
+            <div class="list-item__num">3</div>
+            <p class="list-item__text">
+              Want more vouchers? Become an exclusive member of the SwipAi club for only <b>$19.99</b> per month and receive up
+              to <b>10 vouchers</b> every month.
+            </p>
+          </li>
+        </ul>
+        <a href="#" class="section__btn btn btn--border offer-btn">Get 3 free vouchers without a subscription</a>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="section">
+  <div class="section__container">
+    <h3 class="section__title vouchers-title">Available vouchers for the current month</h3>
+    <div class="section__vouchers">
+      <div class="voucher">
+        <div class="voucher__discount">Discount 10%</div>
+        <div class="voucher__logo">
+          <img src="img/vouchers/netflix.svg" alt="netflix" loading="lazy" class="img-full">
+        </div>
+        <a href="#" class="voucher__btn">Get promocode ></a>
+      </div>
+      <div class="voucher">
+        <div class="voucher__discount">Discount 50%</div>
+        <div class="voucher__logo">
+          <img src="img/vouchers/facebook.svg" alt="facebook" loading="lazy" class="img-full">
+        </div>
+        <a href="#" class="voucher__btn">Get promocode ></a>
+      </div>
+      <div class="voucher">
+        <div class="voucher__discount">Discount 80%</div>
+        <div class="voucher__logo">
+          <img src="img/vouchers/samsung.svg" alt="samsung" loading="lazy" class="img-full">
+        </div>
+        <a href="#" class="voucher__btn">Get promocode ></a>
+      </div>
+      <div class="voucher">
+        <div class="voucher__discount">Discount 100%</div>
+        <div class="voucher__logo">
+          <img src="img/vouchers/amazon.svg" alt="amazon" loading="lazy" class="img-full">
+        </div>
+        <a href="#" class="voucher__btn">Get promocode ></a>
+      </div>
+      <div class="voucher">
+        <div class="voucher__discount">Discount 100%</div>
+        <div class="voucher__logo">
+          <img src="img/vouchers/amazon.svg" alt="amazon" loading="lazy" class="img-full">
+        </div>
+        <a href="#" class="voucher__btn">Get promocode ></a>
+      </div>
+      <div class="voucher">
+        <div class="voucher__discount">Discount 10%</div>
+        <div class="voucher__logo">
+          <img src="img/vouchers/netflix.svg" alt="netflix" loading="lazy" class="img-full">
+        </div>
+        <a href="#" class="voucher__btn">Get promocode ></a>
+      </div>
+      <div class="voucher">
+        <div class="voucher__discount">Discount 80%</div>
+        <div class="voucher__logo">
+          <img src="img/vouchers/samsung.svg" alt="samsung" loading="lazy" class="img-full">
+        </div>
+        <a href="#" class="voucher__btn">Get promocode ></a>
+      </div>
+      <div class="voucher">
+        <div class="voucher__discount">Discount 50%</div>
+        <div class="voucher__logo">
+          <img src="img/vouchers/facebook.svg" alt="facebook" loading="lazy" class="img-full">
+        </div>
+        <a href="#" class="voucher__btn">Get promocode ></a>
+      </div>
+      <div class="voucher">
+        <div class="voucher__discount">Discount 10%</div>
+        <div class="voucher__logo">
+          <img src="img/vouchers/netflix.svg" alt="netflix" loading="lazy" class="img-full">
+        </div>
+        <a href="#" class="voucher__btn">Get promocode ></a>
+      </div>
+      <div class="voucher">
+        <div class="voucher__discount">Discount 80%</div>
+        <div class="voucher__logo">
+          <img src="img/vouchers/samsung.svg" alt="samsung" loading="lazy" class="img-full">
+        </div>
+        <a href="#" class="voucher__btn">Get promocode ></a>
+      </div>
+    </div>
+    <div class="vouchers-btn">
+      <a href="#" class="section__btn btn btn--border">Get your voucher!</a>
+    </div>
+  </div>
+</section>
+    <section class="section section--ice-cold">
+  <div class="section__container section__container--jcc">
+    <div class="section__label">
+      <div class="excellent">
+        <p class="excellent__title">Excellent</p>
+        <div class="excellent__stars">
+          <svg><use xlink:href="img/icons/icons.svg#stars"></use></svg>
+        </div>
+      </div>
+      <div class="based">
+        <p class="based__text">Based on</p>
+        <a href="#" class="based__link">456 reviews</a>
+      </div>
+      <div class="trustpilot">
+        <div class="trustpilot__star">
+          <svg><use xlink:href="img/icons/icons.svg#trustpilot-star"></use></svg>
+        </div>
+        <p class="trustpilot__title">Trustpilot</p>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="section section--calcareous-sinter">
+  <div class="section__container">
+    <h3 class="section__title">Latest reviews about SwipAi</h3>
+    <div class="reviews__layout">
+      <a href="#" class="reviews">
+        <div class="reviews__image">
+          <picture><source srcset="img/reviews-img1.webp" type="image/webp"><img src="img/reviews-img1.jpg" alt="" loading="lazy" class="img-full" /></picture>
+        </div>
+        <div class="reviews__body">
+          <h4 class="reviews__title">Steve</h4>
+          <p class="reviews__text">
+            I never won anywhere! I tried the “free” voucher yesterday and received a Netflix 1-month free voucher.
+            Maybe it's not a big deal, but still good!
+          </p>
+        </div>
+      </a>
+      <a href="#" class="reviews">
+        <div class="reviews__image">
+          <picture><source srcset="img/reviews-img2.webp" type="image/webp"><img src="img/reviews-img2.jpg" alt="" loading="lazy" class="img-full" /></picture>
+        </div>
+        <div class="reviews__body">
+          <h4 class="reviews__title">Jose</h4>
+          <p class="reviews__text">¡Recibí un cupón para Amazon! Genial, gracias, lo recomendaré a mis amigos.</p>
+        </div>
+      </a>
+      <a href="#" class="reviews">
+        <div class="reviews__image">
+          <picture><source srcset="img/reviews-img3.webp" type="image/webp"><img src="img/reviews-img3.jpg" alt="" loading="lazy" class="img-full" /></picture>
+        </div>
+        <div class="reviews__body">
+          <h4 class="reviews__title">Laurel</h4>
+          <p class="reviews__text">
+            Just won an Amazon $7 and $20 discount and a free Netflix month. Not that much, but pretty good
+          </p>
+        </div>
+      </a>
+      <a href="#" class="reviews">
+        <div class="reviews__image">
+          <picture><source srcset="img/reviews-img4.webp" type="image/webp"><img src="img/reviews-img4.jpg" alt="" loading="lazy" class="img-full" /></picture>
+        </div>
+        <div class="reviews__body">
+          <h4 class="reviews__title">Mike</h4>
+          <p class="reviews__text">I received 3 Amazon coupons for $74 in total! Well done</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+    <section class="section">
+  <div class="section__container">
+    <h3 class="section__title tac">How to become a winner?</h3>
+    <div class="step__layout">
+      <div class="step">
+        <div class="step__icon">
+          <img src="img/winner-step1.svg" alt="step1" loading="lazy" class="img-full" />
+        </div>
+        <h3 class="step__title">1 STEP</h3>
+        <p class="step__text">Fill the form</p>
+      </div>
+      <div class="step">
+        <div class="step__icon">
+          <img src="img/winner-step1.svg" alt="step1" loading="lazy" class="img-full" />
+        </div>
+        <h3 class="step__title">2 STEP</h3>
+        <p class="step__text">Smart AI chooses the most promising voucher options for you</p>
+      </div>
+      <div class="step">
+        <div class="step__icon">
+          <img src="img/winner-step1.svg" alt="step1" loading="lazy" class="img-full" />
+        </div>
+        <h3 class="step__title">3 STEP</h3>
+        <p class="step__text">You have your prizes</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="section">
+  <div class="section__container">
+    <div class="section__row">
+      <div class="section__row-picture">
+        <img src="img/free-vaucher.svg" alt="free-vaucher" loading="lazy" class="img-full" />
+      </div>
+      <form action="/" class="section__form form">
+        <h5 class="form__title">Do not miss your opportunity to receive<br> <b>3 vouchers for free!</b></h5>
+        <select name="" id="" class="form__select">
+          <option value="" selected disabled hidden>Choose the type of voucher</option>
+          <option value="whatever">Whatever</option>
+          <option value="netflix">Netflix</option>
+          <option value="zara">Zara</option>
+          <option value="amazon">Amazon</option>
+          <option value="eBay">eBay</option>
+          <option value="PayPal">PayPal</option>
+          <option value="Starbucks">Starbucks</option>
+          <option value="Google">Google</option>
+          <option value="Samsung">Samsung</option>
+        </select>
+        <input type="text" class="form__input" placeholder="Voucher">
+        <button type="submit" class="form__btn btn btn--gradient">GET VOUCHER!</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+    <section class="section section--alice-blue">
+  <div class="section__container">
+    <div class="section__note">
+      <p class="section__text">
+        Note: The term "one attempt" means "one generated link for one IP address". Don't miss out on free trials:<br
+          class="mob-none"
+        />
+        if you don't fill out the form using the generated link, the trial is still considered as used.
+      </p>
+    </div>
+  </div>
+</section>
+
+   
+  </main>
+
+  <!-- END main page -->
+
+  <footer class="footer">
+  <div class="footer__container">
+    <div class="footer__logo logo">
+      <svg width="24" height="44" viewBox="0 0 24 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <mask id="mask0_207_451" style="mask-type: alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="44">
+          <path
+            d="M21.4488 23.5133C22.5467 23.5133 23.4367 22.6324 23.4367 21.5457C23.4367 20.459 22.5467 19.5781 21.4488 19.5781C20.3509 19.5781 19.4609 20.459 19.4609 21.5457C19.4609 22.6324 20.3509 23.5133 21.4488 23.5133Z"
+            fill="#D18787"
+          />
+          <path
+            d="M21.4488 7.60703C22.5467 7.60703 23.4367 6.72612 23.4367 5.63945C23.4367 4.55279 22.5467 3.67188 21.4488 3.67188C20.3509 3.67188 19.4609 4.55279 19.4609 5.63945C19.4609 6.72612 20.3509 7.60703 21.4488 7.60703Z"
+            fill="#D18787"
+          />
+          <path
+            d="M1.98788 35.3414C3.08575 35.3414 3.97576 34.4605 3.97576 33.3738C3.97576 32.2872 3.08575 31.4062 1.98788 31.4062C0.890003 31.4062 0 32.2872 0 33.3738C0 34.4605 0.890003 35.3414 1.98788 35.3414Z"
+            fill="#D18787"
+          />
+          <path
+            d="M0.140625 43.4972V41.4166C6.31051 41.4166 11.199 39.6445 14.6614 36.1437C20.5065 30.2453 20.3968 21.3022 20.3968 21.2153L22.4988 21.1719C22.5076 21.5715 22.6392 31.0532 16.1753 37.5901C12.3005 41.5079 6.90292 43.4972 0.140625 43.4972Z"
+            fill="#D18787"
+          />
+          <path
+            d="M2.941 24.4117C4.03888 24.4117 4.92888 23.5308 4.92888 22.4441C4.92888 21.3575 4.03888 20.4766 2.941 20.4766C1.84313 20.4766 0.953125 21.3575 0.953125 22.4441C0.953125 23.5308 1.84313 24.4117 2.941 24.4117Z"
+            fill="#D18787"
+          />
+          <path
+            d="M23.434 0.5V2.58485C17.6415 2.73253 13.0295 4.50899 9.71634 7.85779C3.8668 13.7736 3.99405 22.6819 3.99405 22.7732L1.89208 22.8166C1.88331 22.417 1.75166 12.9353 8.21555 6.39839C11.9324 2.63697 17.0491 0.656364 23.434 0.5Z"
+            fill="#D18787"
+          />
+          <path
+            d="M23.4306 9.20312V11.2923C20.8503 11.592 13.3815 13.1817 13.3815 21.5385C13.3815 27.7235 10.2 30.9724 7.52753 32.6099C4.67517 34.3603 1.84035 34.6513 1.72187 34.6644L1.51562 32.5925C1.91057 32.5534 11.2795 31.485 11.2795 21.5385C11.2795 15.297 14.8384 12.2479 17.8268 10.7841C20.0648 9.68959 22.2852 9.32474 23.4306 9.20312Z"
+            fill="#D18787"
+          />
+          <path
+            d="M19.9984 14.7793C21.3149 14.1582 22.6226 13.915 23.4344 13.8281V15.9217C21.6616 16.1562 17.7034 17.2204 17.7034 21.9981C17.7034 30.1204 13.0869 38.7942 0.132812 38.7942V36.7137C14.4824 36.7137 15.6014 25.4512 15.6014 21.9981C15.6014 17.7589 17.993 15.7349 19.9984 14.7793Z"
+            fill="#D18787"
+          />
+          <path
+            d="M0.140625 30.1019V28.0214C4.59909 28.0214 6.70106 25.8019 6.75372 21.0415C6.80638 16.394 8.60556 13.3102 8.68016 13.1799C13.1957 5.3356 22.6173 4.62762 23.0122 4.60156L23.1526 6.67773C23.0649 6.68207 14.4507 7.3553 10.4969 14.2223C10.475 14.257 8.89519 16.9977 8.85131 21.0632C8.82498 23.5172 8.27645 25.5109 7.22327 26.992C5.75759 29.0551 3.37477 30.1019 0.140625 30.1019Z"
+            fill="#D18787"
+          />
+        </mask>
+        <g mask="url(#mask0_207_451)">
+          <rect y="0.5" width="23.8453" height="43.3173" fill="url(#paint0_linear_207_451)" />
+        </g>
+        <defs>
+          <linearGradient
+            id="paint0_linear_207_451"
+            x1="23.8453"
+            y1="0.500001"
+            x2="0.0944067"
+            y2="43.869"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stop-color="#05B29E" />
+            <stop offset="1" stop-color="#716DFC" />
+          </linearGradient>
+        </defs>
+      </svg>
+      <span>swipai</span>
+    </div>
+    <div class="footer__body">
+      <div class="excellent">
+        <p class="excellent__title">Excellent</p>
+        <div class="excellent__stars">
+          <svg><use xlink:href="img/icons/icons.svg#stars"></use></svg>
+        </div>
+      </div>
+      <div class="trustpilot">
+        <div class="trustpilot__star">
+          <svg><use xlink:href="img/icons/icons.svg#trustpilot-star"></use></svg>
+        </div>
+        <p class="trustpilot__title">Trustpilot</p>
+      </div>
+    </div>
+    <p class="footer__reseived">2024 (с) All rights reserved.</p>
+  </div>
+</footer>
+
+  
+  
+  <script src="js/plugins/plugins.min.js?_v=20240118181331"></script>
+
+<script src="js/app.min.js?_v=20240118181331"></script>
+ 
+</body>
+
+</html>
