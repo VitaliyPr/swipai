@@ -35,11 +35,11 @@
 </script>
 
 
-<link rel="stylesheet" href="css/plugins/plugins.min.css?_v=20240123132949" />
+<link rel="stylesheet" href="css/plugins/plugins.min.css?_v=20240125144615" />
 
-<link rel="stylesheet" href="css/style.min.css?_v=20240123132949" />
+<link rel="stylesheet" href="css/style.min.css?_v=20240125144615" />
 
-<script src="https://app.getreview.io/tags/7JVbu9jNI9p90vZa/sdk.js?_v=20240123132949" async></script>
+<script src="https://app.getreview.io/tags/7JVbu9jNI9p90vZa/sdk.js?_v=20240125144615" async></script>
 
 
 </head>
@@ -416,7 +416,7 @@
           <option value="Samsung">Samsung</option>
           <option value="Amazon">Amazon</option>
         </select>
-        <button type="submit" class="form__btn btn btn--gradient">GET VOUCHER!</button>
+        <a data-src="#get_voucher" data-fancybox="voucher" class="form__btn btn btn--gradient">GET VOUCHER!</a>
       </form>
     </div>
   </div>
@@ -519,11 +519,38 @@
   </div>
 </footer>
 
-  
-  
-  <script src="js/plugins/plugins.min.js?_v=20240123132949"></script>
+  <div class="modal" id="get_voucher">
+  <div class="modal__wrap">
+    <div class="modal__loading">
+      <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M58.6274 13.3726C53.3924 8.13761 46.5043 4.87974 39.1365 4.15409C31.7688 3.42843 24.3774 5.27988 18.2217 9.39297C12.0661 13.5061 7.52699 19.6263 5.37791 26.7109C3.22882 33.7955 3.60271 41.4061 6.43586 48.2459C9.269 55.0857 14.3861 60.7316 20.9153 64.2215C27.4445 67.7114 34.9818 68.8295 42.2429 67.3851C49.504 65.9408 56.0397 62.0235 60.7363 56.3006C65.433 50.5777 68 43.4034 68 36" stroke="url(#paint0_linear_234_129)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        <defs>
+        <linearGradient id="paint0_linear_234_129" x1="64" y1="36" x2="8" y2="36" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#05B29E"/>
+        <stop offset="1" stop-color="#716DFC"/>
+        </linearGradient>
+        </defs>
+      </svg>        
+    </div>
+    <h5 class="modal__analizing-title">Analyzing</h5>
+  </div>
+</div>
 
-<script src="js/app.min.js?_v=20240123132949"></script>
+<div class="modal" id="win">
+  <div class="modal__wrap">
+    <div class="modal__logo">
+      <img src="img/vouchers/netflix.svg" alt="netflix" loading="lazy" class="img-full">
+    </div>
+    <h3 class="modal__title">Netflix free subscribe</h3>
+    <span class="modal__sm">Advertiser Rating</span>
+    <div class="modal__label">89% Chance to win!</div>
+    <a href="#" class="modal__btn btn btn--gradient">TRY TO WIN THE VOUCHER!</a>
+  </div>
+</div>
+  
+  <script src="js/plugins/plugins.min.js?_v=20240125144615"></script>
+
+<script src="js/app.min.js?_v=20240125144615"></script>
  
 </body>
 

@@ -481,6 +481,120 @@ p {
   transition: all 0.5s ease 0s;
 }
 
+.modal {
+  display: none;
+  border-radius: 12px;
+  border: 1px solid #b0caed;
+  background: #eaf3ff;
+  padding: 2rem 1.6rem;
+  width: 95%;
+  height: auto;
+}
+
+.modal [data-fancybox-close] {
+  display: none;
+}
+
+.modal__wrap {
+  width: 100%;
+  min-height: 20rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2.4rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.modal__loading {
+  width: 5.2rem;
+  height: 5.2rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-animation: rotate 1.5s linear infinite;
+          animation: rotate 1.5s linear infinite;
+}
+
+.modal__loading svg {
+  width: 100%;
+  height: 100%;
+}
+
+.modal__analizing-title {
+  color: #161929;
+  font-weight: 700;
+}
+
+.modal__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  height: 4.224rem;
+}
+
+.modal__sm {
+  color: #464646;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 137.5%;
+  margin-bottom: -0.8rem;
+}
+
+.modal__label {
+  position: relative;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 78.571%;
+  padding: 1.2rem 2rem;
+  background: -webkit-linear-gradient(180deg, #05b29e, transparent) #716dfc;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.modal__label::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 130px;
+  padding: 3px;
+  background: -webkit-gradient(linear, right top, left top, from(#05b29e), to(#716dfc));
+  background: -o-linear-gradient(right, #05b29e 0%, #716dfc 100%);
+  background: linear-gradient(270deg, #05b29e 0%, #716dfc 100%);
+  -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.modal__btn {
+  font-size: 1.6rem;
+}
+
+@-webkit-keyframes rotate {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 .section--calcareous-sinter {
   background-color: var(--calcareous-sinter);
 }
@@ -1135,6 +1249,38 @@ p {
 
   .menu__link {
     font-size: 1.4rem;
+  }
+
+  .modal {
+    width: 62.4rem;
+    min-height: 32.4rem;
+    padding: 2.4rem 1.6rem;
+  }
+
+  .modal__wrap {
+    min-height: 32.4rem;
+  }
+
+  .modal__loading {
+    width: 7.2rem;
+    height: 7.2rem;
+  }
+
+  .modal__loading:not(:last-child) {
+    margin-bottom: 0.8rem;
+  }
+
+  .modal__sm {
+    font-size: 1.6rem;
+  }
+
+  .modal__label {
+    font-size: 2.8rem;
+  }
+
+  .modal__btn {
+    font-size: 2rem;
+    padding: 1.6rem 2.4rem;
   }
 
   .section__container {
